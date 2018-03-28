@@ -7,7 +7,8 @@ RUN add-apt-repository ppa:beineri/opt-qt-5.10.1-xenial \
     && wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
     && apt-get update \
     && apt-get install -y --no-install-recommends  \
-        build-essential cmake curl python3 python3-pip wget qt510base qt510location \
+        build-essential cmake curl python3 python3-pip python3-setuptools wget \
+        qt510base qt510location \
         mesa-common-dev clang-format-6.0 \
     && ln -s /usr/bin/clang-format-6.0 /usr/local/bin/clang-format \
     && pip3 install conan \
