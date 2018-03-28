@@ -1,0 +1,6 @@
+build
+*.exe
+.gitignore
+.git
+Makefile
+README.md
